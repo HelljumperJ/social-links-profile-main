@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="./assets/css/styles.css" rel="stylesheet">
   <title>Frontend Mentor | Social links profile</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;}
     .attribution a { color: hsl(228, 45%, 44%); }
+    .gris {background-color: hsl(0, 0%, 20%); border-color: hsl(0, 0%, 12%);}
+    .grisoscuro {background-color: hsl(0, 0%, 12%);}
+    .offblack {background-color: hsl(0, 0%, 8%);}
   </style>
 </head>
-<body>
+<body class="offblack">
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
+  <div class="card max-w-sm grisoscuro shadow-xl m-auto justify-center mt-16">
+    <figure class="px-10 pt-10">
+      <img src="assets/images/avatar-jessica.jpeg" class="w-24 rounded-full" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-white">Jessica Randall</h2>
+      <p class="text-lime-400 font-semibold">London, United Kingdom</p>
+      <p class="text-white mb-2">"Front-end developer and avid reader."</p>
+      <div class="card-actions">
+        <button class="btn gris text-white w-80">GitHub</button>
+        <button class="btn gris text-white w-80">Frontend Mentor</button>
+        <button class="btn gris text-white w-80">LinkedIn</button>
+        <button class="btn gris text-white w-80">Twitter</button>
+        <button class="btn gris text-white w-80">Instagram</button>
+      </div>
+    </div>
+  </div>
+  <div class="attribution text-white">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jefrey Poveda</a>.
   </div>
 </body>
 </html>
